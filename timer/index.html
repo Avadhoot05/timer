@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./index.js"></script>
+    <title>Timer</title>
+</head>
+<body>
+    <h1>Timer</h1>
+    <div class="timer-input">
+        <div class="hour-input-container">
+            <label>Hour</label>
+            <input 
+                id="input-hour" 
+                type="number" 
+                placeholder="00"
+                maxlength="2"
+                oninput="this.value = this.value.slice(0, this.maxLength)"
+            >
+        </div>
+        <span class="colen">:</span>
+        <div class="minute-input-container">
+            <label>Minute</label>
+            <input 
+                id="input-minute" 
+                type="number" 
+                placeholder="00" 
+                maxlength="2"
+                oninput="this.value = this.value.slice(0, this.maxLength)"
+            >
+        </div>
+        <span class="colen">:</span>
+        <div class="second-input-container">
+            <label>Seconds</label>
+            <input 
+                id="input-second" 
+                type="number" 
+                placeholder="00" 
+                maxlength="2"
+                oninput="this.value = this.value.slice(0, this.maxLength)"
+            >
+        </div>
+    </div>
+    
+    <div class="btn-container">
+        <button id="btn-start" class="btn btn-start">Start</button>
+        <button id="btn-reset" class="btn btn-reset">Reset</button>
+    </div>
+    
+</body>
+</html>
